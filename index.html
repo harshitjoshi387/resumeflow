@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeFlow | Build Your Professional Resume Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <div class="logo-icon">RF</div>
+                <span>ResumeFlow</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#templates" class="active">Resume Templates</a></li>
+                <li><a href="#features">Resume Examples</a></li>
+                <li><a href="builder.html">Cover Letter</a></li>
+                <li><a href="#features">FAQ</a></li>
+            </ul>
+
+            <div class="nav-btns">
+                <a href="signin.html" class="btn btn-text">Sign in</a>
+                <a href="signup.html" class="btn btn-primary btn-round">Create my resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-sec container">
+            <div class="hero-grid">
+                
+                <div class="hero-left">
+                    <h1>This resume builder gets you <span class="highlight">an interview</span></h1>
+                    <p>Only 2% of resumes win. Yours will be one of them. Create, download, and share your resume in minutes.</p>
+                    
+                    <div class="hero-ctas">
+                        <a href="builder.html" class="btn btn-primary btn-round">Create my resume</a>
+                        <a href="builder.html" class="btn btn-secondary btn-round">Upload my resume</a>
+                    </div>
+
+                    <div class="hero-social-proof">
+                        <div class="proof-item">
+                            <span class="icon">✓</span>
+                            <span>39% more likely to land the job</span>
+                        </div>
+                        <div class="proof-item">
+                            <span class="trustpilot-stars">★★★★★</span>
+                            <span>Trustpilot 4.2 out of 5 | 55,784 reviews</span>
+                        </div>
+                    </div>
+
+                    <div class="counter-badge">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+                        </svg>
+                        <span id="created-counter">95,951</span> resumes created today
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="mockup-bg"></div>
+                    
+                    <!-- Interactive Resume Mockup -->
+                    <div class="resume-card">
+                        <div class="resume-card-header">
+                            <div class="profile-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=120" alt="Alice Hart">
+                            </div>
+                            <div class="profile-info">
+                                <h4>Alice Hart</h4>
+                                <p>Math Teacher</p>
+                            </div>
+                        </div>
+                        <div class="resume-card-body">
+                            <div class="resume-body-line long"></div>
+                            <div class="resume-body-line medium"></div>
+                            <div class="resume-body-line short"></div>
+                            <div style="margin-top: 24px;" class="resume-body-line long"></div>
+                            <div class="resume-body-line medium"></div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge: Score -->
+                    <div class="float-badge badge-score">
+                        <svg width="36" height="36" viewBox="0 0 36 36">
+                            <circle cx="18" cy="18" r="16" fill="none" stroke="#e2e8f0" stroke-width="3"></circle>
+                            <circle cx="18" cy="18" r="16" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="100" stroke-dashoffset="19" stroke-linecap="round"></circle>
+                        </svg>
+                        <div>
+                            <div style="color: #10b981; font-weight: 800; font-size: 14px;">81%</div>
+                            <div style="font-size: 9px; color: var(--text-muted);">Resume Score</div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge: ATS Perfect -->
+                    <div class="float-badge badge-ats">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                        <span>ATS Perfect</span>
+                    </div>
+
+                    <!-- Floating Badge: Skills -->
+                    <div class="float-badge badge-skills">
+                        <span style="font-size: 11px; color: var(--text-muted);">Skills 🔗</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Management</span>
+                            <span class="skill-tag">Analytical</span>
+                            <span class="skill-tag">Leadership</span>
+                            <span class="skill-tag add-btn">+ Add skill</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge: AI Coach -->
+                    <div class="float-badge badge-ai">
+                        <div style="width: 100%;">
+                            <div style="font-size: 10px; color: var(--text-muted); margin-bottom: 4px;">AI Career Coach</div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-main); padding: 4px 8px; border-radius: 6px;">
+                                <span style="font-size: 11px;">Ask AI coach anything...</span>
+                                <span style="color: var(--primary);">✦</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Features Grid Section -->
+        <section id="features" class="section-padding container">
+            <div class="section-header">
+                <h2>Every tool you need is here...</h2>
+                <p>Build your professional profile and stand out to recruiters with our full suite of job search tools.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>A draft in 10 mins</h3>
+                    <p>The AI builder is 10x faster than writing a resume on your own.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">A+</div>
+                    <h3>Zero mistakes</h3>
+                    <p>Don't stress over typos; our integrated spell checker has your back.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>ATS templates</h3>
+                    <p>Your resume will be 100% compliant and fully scannable by HR software.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💲</div>
+                    <h3>Get paid 7% more</h3>
+                    <p>Use our tools to negotiate a significantly higher starting salary.</p>
+                </div>
+            </div>
+
+            <!-- Features Split Cards -->
+            <div class="features-split">
+                <!-- Left: List of steps -->
+                <div class="split-left">
+                    <div class="step-item">
+                        <div class="step-num">1</div>
+                        <div class="step-text">
+                            <h4>Get Noticed</h4>
+                            <p>Stunning designs tailored to grab HR attention.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">2</div>
+                        <div class="step-text">
+                            <h4>Get Hired</h4>
+                            <p>Optimized text suggestions to showcase your skills.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">3</div>
+                        <div class="step-text">
+                            <h4>Get Paid More</h4>
+                            <p>Unlock higher-paying careers with specialized resume profiles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle: Career Coaching -->
+                <div class="card-coaching">
+                    <div class="coaching-badge">Live Chat</div>
+                    <div>
+                        <h3>Career Coaching</h3>
+                        <p>Work 1-1 with an expert to expand your network, prepare for interviews, and negotiate a higher salary.</p>
+                    </div>
+                    <div class="coaching-avatars">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=80" alt="Coach 1">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=80" alt="Coach 2">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=80" alt="Coach 3">
+                        <span style="font-size: 13px; font-weight: 700; color: #065f46; margin-left: 20px;">Join 2,400+ members</span>
+                    </div>
+                </div>
+
+                <!-- Right: Future Learn -->
+                <div class="card-futurelearn">
+                    <div>
+                        <h3>Future Learn</h3>
+                        <p>Future-proof yourself. Get accredited courses respected by global employers to boost your profile.</p>
+                    </div>
+                    <div class="progress-circle-wrap">
+                        <div class="progress-circle"></div>
+                        <div>
+                            <div style="font-weight: 700; font-size: 14px;">Your progress</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">Upskill now</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Templates Carousel Section -->
+        <section id="templates" class="section-padding templates-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Tested resume templates</h2>
+                    <p>Use templates recruiters like. Fully compliant and downloadable in Word or PDF.</p>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="tabs-container">
+                    <button class="tab-btn active" data-category="all">All Templates</button>
+                    <button class="tab-btn" data-category="traditional">Traditional</button>
+                    <button class="tab-btn" data-category="entry-level">Entry Level</button>
+                    <button class="tab-btn" data-category="classic">Classic</button>
+                    <button class="tab-btn" data-category="professional">Professional</button>
+                    <button class="tab-btn" data-category="prime-ats">Prime ATS</button>
+                </div>
+
+                <!-- Carousel Slider -->
+                <div class="slider-wrapper">
+                    <button class="slider-btn prev">‹</button>
+                    
+                    <div class="slider-container" id="templates-slider">
+                        
+                        <!-- Slide 1: Traditional -->
+                        <div class="template-slide temp-traditional" data-category="traditional">
+                            <div class="template-preview">
+                                <div class="preview-header">Tiffany Giroux | Traditional</div>
+                                <div class="preview-content">
+                                    <div class="preview-section">
+                                        <div class="preview-bar" style="width: 40%"></div>
+                                        <div class="preview-bar" style="width: 90%"></div>
+                                    </div>
+                                    <div class="preview-section">
+                                        <div class="preview-bar" style="width: 100%"></div>
+                                        <div class="preview-bar" style="width: 80%"></div>
+                                        <div class="preview-bar" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="template-overlay">
+                                <a href="builder.html" class="btn btn-primary">Use this template</a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: Entry Level -->
+                        <div class="template-slide temp-modern" data-category="entry-level">
+                            <div class="template-preview">
+                                <div class="preview-header">John Doe | Entry Level</div>
+                                <div class="preview-content">
+                                    <div class="preview-section">
+                                        <div class="preview-bar" style="width: 60%"></div>
+                                        <div class="preview-bar" style="width: 80%"></div>
+                                    </div>
+                                    <div class="preview-section">
+                                        <div class="preview-bar" style="width: 90%"></div>
+                                        <div class="preview-bar" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="template-overlay">
+                                <a href="builder.html" class="btn btn-primary">Use this template</a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3: Classic -->
+                        <div class="template-slide temp-classic" data-category="classic">
+                            <div class="template-preview">
+                                <div class="preview-header">Robert Smith | Classic</div>
+                                <div class="preview-content">
+                                    <div class="preview-section">
+                                        <div class="preview-bar" style="width: 50%"></div>
+                                        <div class="preview-bar" style="width: 100%"></div>
+                                    </div>
+                                    <div class="preview-section">
+                                        <div class="preview-bar" style="width: 80%"></div>
+                                        <div class="preview-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="template-overlay">
+                                <a href="builder.html" class="btn btn-primary">Use this template</a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4: Professional -->
+                        <div class="template-slide temp-traditional" data-category="professional">
+                            <div class="template-preview">
+                                <div class="preview-header">Sarah Jenkins | Professional</div>
+                                <div class="preview-content">
+                                    <div class="preview-section">
+                                        <div class="preview-bar" style="width: 70%"></div>
+                                        <div class="preview-bar" style="width: 90%"></div>
+                                    </div>
+                                    <div class="preview-section">
+                                        <div class="preview-bar" style="width: 100%"></div>
+                                        <div class="preview-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="template-overlay">
+                                <a href="builder.html" class="btn btn-primary">Use this template</a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5: Prime ATS -->
+                        <div class="template-slide temp-creative" data-category="prime-ats">
+                            <div class="template-preview">
+                                <div class="preview-header">Alex Mercer | Prime ATS</div>
+                                <div class="preview-content">
+                                    <div class="preview-section">
+                                        <div class="preview-bar" style="width: 40%"></div>
+                                        <div class="preview-bar" style="width: 85%"></div>
+                                    </div>
+                                    <div class="preview-section">
+                                        <div class="preview-bar" style="width: 95%"></div>
+                                        <div class="preview-bar" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="template-overlay">
+                                <a href="builder.html" class="btn btn-primary">Use this template</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="slider-btn next">›</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: var(--text-main); color: white; padding: 60px 0 30px 0; border-top: 1px solid rgba(255,255,255,0.1);">
+        <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; margin-bottom: 40px;">
+            <div>
+                <div class="logo" style="color: white; margin-bottom: 15px;">
+                    <div class="logo-icon">RF</div>
+                    <span style="background: none; -webkit-text-fill-color: white; color: white;">ResumeFlow</span>
+                </div>
+                <p style="color: var(--text-muted); font-size: 14px; max-width: 250px;">Creating resumes made simpler, faster, and professional.</p>
+            </div>
+            
+            <div style="display: flex; gap: 80px; flex-wrap: wrap;">
+                <div>
+                    <h5 style="margin-bottom: 15px; font-weight: 700; font-size: 15px;">Product</h5>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+                        <li><a href="#templates" style="color: var(--text-muted);">Templates</a></li>
+                        <li><a href="#features" style="color: var(--text-muted);">Features</a></li>
+                        <li><a href="builder.html" style="color: var(--text-muted);">Resume Builder</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 15px; font-weight: 700; font-size: 15px;">Support</h5>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+                        <li><a href="#features" style="color: var(--text-muted);">FAQ</a></li>
+                        <li><a href="#" style="color: var(--text-muted);">Contact Support</a></li>
+                        <li><a href="signin.html" style="color: var(--text-muted);">Sign In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px; text-align: center; color: var(--text-muted); font-size: 13px;">
+            © 2026 ResumeFlow. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

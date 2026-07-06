@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder | ResumeFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: #cbd5e1; height: 100vh; overflow: hidden;">
+
+    <!-- Builder Header -->
+    <header class="builder-nav">
+        <a href="index.html" class="builder-logo">
+            <div class="logo-icon" style="width: 28px; height: 28px; font-size: 14px;">RF</div>
+            ResumeFlow Builder
+        </a>
+        <div style="font-size: 13px; color: var(--text-muted); font-weight: 500;">
+            🟢 Auto-saved to local draft
+        </div>
+        <div class="builder-actions">
+            <a href="index.html" class="btn btn-outline" style="padding: 8px 16px;">Exit</a>
+            <button onclick="window.print();" class="btn btn-primary" style="padding: 8px 16px;">Download PDF</button>
+        </div>
+    </header>
+
+    <!-- Builder Work Area -->
+    <div class="builder-layout">
+        
+        <!-- Sidebar Inputs -->
+        <aside class="builder-sidebar">
+            
+            <!-- Section: Personal Info -->
+            <div>
+                <h3 class="builder-section-title">Personal Details</h3>
+                <div class="auth-form" style="gap: 15px;">
+                    <div class="form-group">
+                        <label for="input-name">Full Name</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="input-name" value="Alice Hart">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-title">Job Title</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="input-title" value="Math Teacher">
+                        </div>
+                    </div>
+                    <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <div>
+                            <label for="input-email">Email</label>
+                            <div class="input-wrapper">
+                                <input type="email" id="input-email" value="alice.hart@gmail.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="input-phone">Phone</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="input-phone" value="+1 (555) 019-2834">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section: Summary -->
+            <div>
+                <h3 class="builder-section-title">Professional Summary</h3>
+                <div class="auth-form">
+                    <div class="form-group">
+                        <label for="input-summary">Bio</label>
+                        <textarea id="input-summary" rows="4" style="width: 100%; border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px; font-size: 14px; background: #f8fafc; resize: vertical; line-height: 1.5;">Passionate and dedicated mathematics educator with over 6 years of experience teaching high school students. Expert in developing engaging lesson plans, encouraging students to pursue STEAM fields, and implementing modern interactive pedagogical tools.</textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section: Experience -->
+            <div>
+                <h3 class="builder-section-title">Employment History</h3>
+                <div class="auth-form" style="gap: 15px;">
+                    <div class="form-group">
+                        <label for="input-job">Job Title</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="input-job" value="Senior Math Teacher">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-employer">Employer / School</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="input-employer" value="Oakridge High School">
+                        </div>
+                    </div>
+                    <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <div>
+                            <label for="input-exp-start">Start Date</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="input-exp-start" value="Sep 2021">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="input-exp-end">End Date</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="input-exp-end" value="Present">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-exp-desc">Description</label>
+                        <textarea id="input-exp-desc" rows="3" style="width: 100%; border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px; font-size: 14px; background: #f8fafc; resize: vertical; line-height: 1.5;">- Instruct AP Calculus, Trigonometry, and Algebra classes for grades 10-12.
+- Designed curriculum for interactive math workshops, raising average standardized test scores by 12%.
+- Mentor student mathematics club and lead state math-olympiad preparation teams.</textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section: Education -->
+            <div>
+                <h3 class="builder-section-title">Education</h3>
+                <div class="auth-form" style="gap: 15px;">
+                    <div class="form-group">
+                        <label for="input-edu-degree">Degree & Major</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="input-edu-degree" value="B.Sc. in Mathematics Education">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-edu-school">School / University</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="input-edu-school" value="State University of Science">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-edu-date">Graduation Date</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="input-edu-date" value="May 2020">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- Preview Sheet Panel -->
+        <main class="builder-preview-panel">
+            <div class="sheet-a4" id="print-area">
+                
+                <!-- Header -->
+                <div class="sheet-header">
+                    <div class="sheet-name" id="preview-name">Alice Hart</div>
+                    <div class="sheet-title" id="preview-title">Math Teacher</div>
+                    <div class="sheet-contact">
+                        <span id="preview-email">📧 alice.hart@gmail.com</span>
+                        <span id="preview-phone">📞 +1 (555) 019-2834</span>
+                    </div>
+                </div>
+
+                <!-- Summary Section -->
+                <div>
+                    <div class="sheet-section-title">Profile Summary</div>
+                    <p class="sheet-text" id="preview-summary">Passionate and dedicated mathematics educator with over 6 years of experience teaching high school students. Expert in developing engaging lesson plans, encouraging students to pursue STEAM fields, and implementing modern interactive pedagogical tools.</p>
+                </div>
+
+                <!-- Experience Section -->
+                <div>
+                    <div class="sheet-section-title">Employment History</div>
+                    
+                    <div class="sheet-item">
+                        <div class="sheet-item-header">
+                            <span id="preview-job">Senior Math Teacher</span>
+                            <span id="preview-exp-dates">Sep 2021 - Present</span>
+                        </div>
+                        <div class="sheet-item-subtitle" id="preview-employer">Oakridge High School</div>
+                        <p class="sheet-text" id="preview-exp-desc" style="white-space: pre-line;">- Instruct AP Calculus, Trigonometry, and Algebra classes for grades 10-12.
+- Designed curriculum for interactive math workshops, raising average standardized test scores by 12%.
+- Mentor student mathematics club and lead state math-olympiad preparation teams.</p>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div>
+                    <div class="sheet-section-title">Education</div>
+                    
+                    <div class="sheet-item">
+                        <div class="sheet-item-header">
+                            <span id="preview-edu-degree">B.Sc. in Mathematics Education</span>
+                            <span id="preview-edu-date">May 2020</span>
+                        </div>
+                        <div class="sheet-item-subtitle" id="preview-edu-school">State University of Science</div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Print styling support -->
+    <style>
+        @media print {
+            body {
+                background: white !important;
+                overflow: visible !important;
+                height: auto !important;
+            }
+            .builder-nav, .builder-sidebar {
+                display: none !important;
+            }
+            .builder-layout {
+                display: block !important;
+                height: auto !important;
+            }
+            .builder-preview-panel {
+                background: white !important;
+                padding: 0 !important;
+                overflow: visible !important;
+                display: block !important;
+            }
+            .sheet-a4 {
+                box-shadow: none !important;
+                width: 100% !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                border: none !important;
+            }
+        }
+    </style>
+
+    <script src="script.js"></script>
+</body>
+</html>
