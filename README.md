@@ -1,12 +1,13 @@
 # 🚀 ResumeFlow
 
-A modern and responsive Resume Builder with a clean UI.
+A modern and responsive Resume Builder that helps users create professional and ATS-friendly resumes with a clean and user-friendly interface.
 
 ## ✨ Features
 
-- User Authentication
-- Responsive Design
-- Modern UI
+- 🔐 User Authentication
+- 📄 Create & Manage Resume
+- 📱 Responsive Design
+- ⚡ Clean & Modern UI
 
 ## 🛠️ Tech Stack
 
@@ -18,8 +19,18 @@ A modern and responsive Resume Builder with a clean UI.
 
 ### Home Page
 
-![Home](./screenshots/home.png)
+![Home Page](./screenshot/home.png)
 
 ### Login Page
 
-![Login](./screenshots/login.png)
+![Login Page](./screenshot/login.png)
+
+## 🚀 Getting Started
+
+1. Clone the repository.
+2. Open the project folder in your browser, or use a local server such as Live Server.
+3. Start with the landing page and explore the resume builder.
+
+---
+
+⭐ If you like this project, consider giving it a star!
